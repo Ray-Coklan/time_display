@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+        {% load static %}
+      <!-- The line above tells Django to be ready to listen for static files -->
+      <link rel="stylesheet" href="{% static 'first_app/css/style.css' %}" media="screen" title="no title"  charset="utf-8">    
+      </head>
+    <body>
+        <div id='title'>
+        <h1>The current time and date is:</h1>
+        </div id='box'>
+        <div class="line">{{time}}</div>
+    </body>
+  </html>
+
+
